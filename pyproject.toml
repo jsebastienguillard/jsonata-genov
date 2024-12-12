@@ -4,15 +4,16 @@ build-backend = "hatchling.build"
 
 
 [project]
-name = "jsonata-python"
-version = "0.5.1"
+name = "jsonata-python.genovation-fork"
+version = "0.5.1.genov"
 description = "Pure Python implementation of JSONata"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.13"
 license = {file = "LICENSE"}
-keywords = ["jsonata", "json"]
+keywords = ["jsonata", "json", "genovation"]
 authors = [
-  {name = "Robert Yokota"}
+  {name = "Robert Yokota"},
+  {name = "Jean-Sebastien Guillard"}
 ]
 classifiers = [
   "Development Status :: 4 - Beta",

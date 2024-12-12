@@ -982,8 +982,13 @@ class Jsonata:
             env.is_parallel_call = idx > 0
             # return [key, /* await */ eval(expr.lhs[entry.exprIndex][1], context, env)]
             res = self.eval(expr.lhs_object[entry.exprIndex][1], context, env)
-            if res is not None:
-                result[k] = res
+
+            # JSG, as of 12-Dec-2024, from
+            # if res is not None:
+            #   result[k] = res
+            # JSG, as of 12-Dec-2024, to
+            result[k] = res
+            # JSG, as of 12-Dec-2024, end
 
             idx += 1
 
